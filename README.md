@@ -379,3 +379,164 @@ Ejemplo:
 
 
 
+##  _**CSS**_
+
+# Márgenes, bordes y relleno
+
+En CSS las cajas se controlan con **márgenes**, **bordes** y **relleno**.
+
+---
+
+## Márgenes
+
+El **margin** es el espacio que hay **por fuera** de la caja.
+
+Se puede usar de forma individual:
+
+- `margin-top`
+- `margin-right`
+- `margin-bottom`
+- `margin-left`
+
+También se puede usar con distintas unidades:
+
+- `px`
+- `em`
+- `rem`
+- `%`
+- `auto` → se usa sobre todo para **centrar una caja horizontalmente**
+
+Los márgenes sirven para **separar elementos** entre sí.
+
+---
+
+## Bordes
+
+El **border** rodea la caja.
+
+Normalmente se usa en píxeles (`px`).
+
+Ejemplos:
+- `border: 1px solid black`
+- `border: 5px solid red`
+
+Los bordes sirven para:
+- Ver los límites de las cajas
+- Ayudar a maquetar la página
+
+---
+
+## Padding
+
+El **padding** es el espacio **interior** de la caja, entre el contenido y el borde.
+
+Se puede usar con:
+- `px`
+- `%`
+
+Formas comunes:
+- `padding: 10px`
+- `padding: 10px 20px`
+
+Sirve para que el contenido **no esté pegado al borde**.
+
+---
+
+# Display
+
+`display: block` es el comportamiento normal de elementos como `div` o `section`.
+
+Características:
+- Ocupan todo el ancho disponible
+- Se colocan **uno debajo del otro**
+- Se les puede aplicar `width` y `height`
+
+Se usa para crear la estructura básica de una página.
+
+---
+
+# Contenedores
+
+Un **container** suele tener:
+
+- `width`
+- `height`
+- `background-color`
+- `padding`
+
+Normalmente usa `display: block`.
+
+Sirve para **agrupar contenido** y organizar la web en secciones.
+
+---
+
+## Box-sizing
+
+La propiedad `box-sizing` controla cómo se calcula el tamaño de una caja.
+
+La más usada es:
+
+- `box-sizing: border-box`
+
+Con esta propiedad:
+- El padding y el borde **no suman** al ancho y alto total
+- Es más fácil controlar el tamaño de las cajas
+
+Es una **buena práctica** usarla.
+
+---
+
+# Text overflow
+
+Se usa cuando un texto **no cabe** dentro de una caja.
+
+Para que funcione hay que usar estas propiedades:
+
+- `white-space: nowrap`
+- `overflow: hidden`
+- `text-overflow: ellipsis` o `clip`
+
+Sirve para:
+- Cortar textos largos
+- Mostrar los **tres puntos (...)** al final
+
+Se usa mucho en noticias.
+
+---
+
+# Display: flex
+
+`display: flex` sirve para organizar elementos dentro de un contenedor.
+
+Conceptos básicos:
+- Los elementos se colocan en **fila** por defecto
+- Facilita la alineación de cajas
+
+Propiedades básicas:
+- `justify-content` - eje horizontal
+- `align-items` - eje vertical
+- `flex-wrap` - permite que los elementos bajen a otra línea
+
+Se usa para menús, galerías y layouts sencillos.
+
+---
+
+##  _**RESPONSIVE**_
+
+El diseño **responsive** sirve para que una web se adapte a distintos tamaños de pantalla como la de un movil o tablet o pantalla de pc.
+
+Se hace usando `@media`
+
+El objetivo es que la web **se vea bien en cualquier dispositivo**.
+
+Ejemplo:
+
+@media (max-width: 715px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .ejemplo {
+    width: 75%;
+  }
+}
