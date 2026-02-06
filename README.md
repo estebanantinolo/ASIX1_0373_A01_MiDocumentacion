@@ -383,16 +383,14 @@ Ejemplo:
 
 # Márgenes, bordes y relleno
 
-En CSS las cajas se controlan con **márgenes**, **bordes** y **relleno**.
+En CSS las cajas se controlan con **márgenes**, **bordes** y **relleno**
 
----
 
-## Márgenes
+## Margenes
 
 El **margin** es el espacio que hay **por fuera** de la caja.
 
 Se puede usar de forma individual:
-
 - `margin-top`
 - `margin-right`
 - `margin-bottom`
@@ -408,7 +406,7 @@ También se puede usar con distintas unidades:
 
 Los márgenes sirven para **separar elementos** entre sí.
 
----
+
 
 ## Bordes
 
@@ -416,15 +414,13 @@ El **border** rodea la caja.
 
 Normalmente se usa en píxeles (`px`).
 
-Ejemplos:
+Ejemplo:
 - `border: 1px solid black`
 - `border: 5px solid red`
 
-Los bordes sirven para:
-- Ver los límites de las cajas
-- Ayudar a maquetar la página
+Los bordes sirven para ver los límites de las cajas
 
----
+
 
 ## Padding
 
@@ -440,7 +436,6 @@ Formas comunes:
 
 Sirve para que el contenido **no esté pegado al borde**.
 
----
 
 # Display
 
@@ -453,9 +448,9 @@ Características:
 
 Se usa para crear la estructura básica de una página.
 
----
 
-# Contenedores
+
+#Contenedores
 
 Un **container** suele tener:
 
@@ -468,7 +463,7 @@ Normalmente usa `display: block`.
 
 Sirve para **agrupar contenido** y organizar la web en secciones.
 
----
+
 
 ## Box-sizing
 
@@ -484,7 +479,7 @@ Con esta propiedad:
 
 Es una **buena práctica** usarla.
 
----
+
 
 # Text overflow
 
@@ -502,7 +497,7 @@ Sirve para:
 
 Se usa mucho en noticias.
 
----
+
 
 # Display: flex
 
@@ -519,7 +514,7 @@ Propiedades básicas:
 
 Se usa para menús, galerías y layouts sencillos.
 
----
+
 
 ##  _**RESPONSIVE**_
 
